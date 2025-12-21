@@ -4,7 +4,7 @@ class Macfilesizing < Formula
   desc "List files and directories sorted by size"
   homepage "https://github.com/jaccon/macfilesizing"
   url "https://github.com/jaccon/macfilesizing/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "d79bb8b1d6c2e6b6e70716ac65ab8e34465ffbec20e6b3d6d19deb498733f8f5"
+  sha256 "d1c0e3a7124f0e60c704b8460aadb376ff38386265d4c162a58b6cfeb3ad252d"
   license "MIT"
 
   depends_on "python@3.11"
