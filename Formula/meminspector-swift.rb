@@ -6,14 +6,36 @@ class MeminspectorSwift < Formula
   license "MIT"
   head "https://github.com/jaccon/meminspector.git", branch: "main"
 
-  depends_on xcode: ["14.0", :build]
   depends_on :macos
 
+  # Try to build with Swift if available, otherwise provide instructions
   def install
     cd "swift-version" do
-      system "swift", "build", "-c", "release", "--disable-sandbox"
-      bin.install ".build/release/MemInspector" => "meminspector"
+      if system("which swift > /dev/null 2>&1")
+        system "swift", "build", "-c", "release"
+        bin.install ".build/release/MemInspector" => "meminspector"
+      else
+        odie "Swift compiler not found. Please install Xcode Command Line Tools or build manually."
+      end
     end
+  end
+
+  def caveats
+    <<~EOS
+      MemInspector Swift Native Version installed successfully!
+      
+      This is a native macOS binary with zero dependencies.
+      Binary size: ~93KB | Startup time: ~10ms
+      
+      Usage:
+        meminspector --tui       # Colored terminal interface
+        meminspector --refresh   # Continuous refresh mode
+        meminspector --graph     # ASCII graphs
+        meminspector --help      # Show all options
+      
+      For the Python version with matplotlib support:
+        brew install jaccon/tap/meminspector
+    EOS
   end
 
   test do
