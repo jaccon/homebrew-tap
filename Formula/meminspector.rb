@@ -31,7 +31,7 @@ class Meminspector < Formula
   end
 
   resource "docker" do
-    url "https://files.pythonhosted.org/packages/e1/80/b4d10f00c26fd4f1a26ab43f9bcb0c87e3f51cef1b7ee8e2c43bb5e1ae33/docker-7.1.0.tar.gz"
+    url "https://files.pythonhosted.org/packages/91/9b/4a2ea29aeba62471211598dac5d96825bb49348fa07e906ea930394a83ce/docker-7.1.0.tar.gz"
     sha256 "ad8c70e6e3f8926cb8a92619b832b4ea5299e2831c14284663184e200546fa6c"
   end
 
