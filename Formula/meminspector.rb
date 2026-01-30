@@ -4,7 +4,7 @@ class Meminspector < Formula
   desc "Memory Inspector for macOS - Analyze memory consumption of applications and threads with Docker support"
   homepage "https://github.com/jaccon/meminspector"
   url "https://github.com/jaccon/meminspector/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "YOUR_SHA256_HASH_HERE"
+  sha256 "d8f5c9b7f2c3445444a3447301d8da316b59a806303ddf74bbd7ff59cf0d2f42"
   license "MIT"
   head "https://github.com/jaccon/meminspector.git", branch: "main"
 
