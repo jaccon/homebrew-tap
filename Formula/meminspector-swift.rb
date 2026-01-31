@@ -1,8 +1,8 @@
 class MeminspectorSwift < Formula
   desc "Memory Inspector for macOS - Native Swift implementation with zero dependencies"
   homepage "https://github.com/jaccon/meminspector"
-  url "https://github.com/jaccon/meminspector/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "0061d3a34a9b5ff551412c3fcce907fa46055bd43dff80d1349c400eca42a12a"
+  url "https://github.com/jaccon/meminspector/archive/refs/tags/v2.0.1.tar.gz"
+  sha256 "d305665f64f24aa085b7aac66992c9f60d84a2547528dac8de076298af1a31a2"
   license "MIT"
   head "https://github.com/jaccon/meminspector.git", branch: "main"
 
